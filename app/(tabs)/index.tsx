@@ -1,9 +1,10 @@
+import CartButton from "@/components/CartButton";
 import { images, offers } from "@/constants";
 import cn from "clsx";
 import { Fragment } from "react";
 import { FlatList, Image, Pressable, Text, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-import "./globals.css";
+import "../globals.css";
  
 export default function App() {
   return (
@@ -51,7 +52,7 @@ export default function App() {
                 <Image source={images.arrowDown} className="size-3" resizeMode="contain" />
               </TouchableOpacity>
             </View>
-            <Text>Cart</Text>
+            <CartButton />
           </View>
         )}
       />
